@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:'Francois One', Arial, Helvetica, sans-serif;
+	background: #2C3E50;
+	color:white;
+}
+
+.corpo {
+	margin-top: 50px;
+	margin-left: 25 px;
+}
+
+.menu li {
+	float:left;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+
+.menu li:hover {
+	cursor:pointer;
+}
+
+
+
+.sub-menu{
+	visibility: hidden;
+}
+
+
+.menu li:hover .sub-menu {
+	visibility:visible;
+}
+
