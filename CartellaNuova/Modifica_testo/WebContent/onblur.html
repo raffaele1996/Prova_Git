@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        Enter your name: <input type="text" id="fname" onblur="myFunction()">
+        
+        <button onClick = "inserisci()"> Inserisci </button>
+        
+        name: <input type="text" id="name" onblur="inserisci()">
+            
+            <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("fname");
+                    x.value = x.value.toUpperCase();
+                }
+            </script>
+            
+            <script>
+                function inserisci() {
+                    var x = document.getElementById("fname");
+                    var y = document.getElementById("name");
+                    y.value = x.value;
+                }
+            </script>
+            
+            <button onClick = "modifica()"> Modifica commento </button>
+            
+            <script>
+                function modifica() {
+                	var x = document.getElementById("fname");
+                	if (x.value == ""){
+                		alert("Il form è vuoto");
+                	}
+                }
+            </script>
+    </body>
+</html>
